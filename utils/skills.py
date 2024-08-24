@@ -262,7 +262,7 @@ def create_video_for_title(data_folder):
     first_image_path = os.path.join(data_folder, "001_picture_prompt.png")
     first_subtitle_path = os.path.join(data_folder, "title.txt")
     first_audio_path = os.path.join(data_folder, "title.mp3")
-    bling_audio_path = os.path.join(data_folder, "../music/bling.mp3")
+    bling_audio_path = os.path.join(data_folder, "../../music/bling.mp3")
 
     # 加载第一个图像
     first_image = ImageClip(first_image_path)
@@ -383,7 +383,7 @@ def create_video_from_images_audio(data_folder):
     final_audio = concatenate_audioclips(audios)
 
     # 加载背景音乐
-    bgm_path = os.path.join(data_folder, '../music/background_music.mp3')
+    bgm_path = os.path.join(data_folder, '../../music/background_music.mp3')
     bgm = AudioFileClip(bgm_path)
 
     # 调整背景音乐的长度以匹配视频长度

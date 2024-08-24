@@ -109,11 +109,11 @@ def main(title: str, content: str, save_folder: str) -> None:
         "api_key": os.getenv("OPENAI_API_KEY"),
         "base_url": os.getenv("OPENAI_API_BASE"),
     }
-    print(os.getenv("OPENAI_API_KEY"))
-    print(os.getenv("OPENAI_API_BASE"))
-    print(llm_config['api_key'])
-    print(llm_config['base_url'])
-    print(llm_config['model'])
+    # print(os.getenv("OPENAI_API_KEY"))
+    # print(os.getenv("OPENAI_API_BASE"))
+    # print(llm_config['api_key'])
+    # print(llm_config['base_url'])
+    # print(llm_config['model'])
 
     # llm_config = {
     #     'model': "glm-4",
@@ -237,11 +237,8 @@ def main(title: str, content: str, save_folder: str) -> None:
 
 if __name__ == '__main__':
     content = """
-    从前，在一个阳光明媚的日子里，森林里的动物们聚集在一起，准备观看一场特别的比赛——龟兔赛跑。兔子因为跑得快而在动物中颇有名气，而乌龟则是出了名的慢吞吞。
-    比赛一开始，兔子就像离弦的箭一样冲了出去，而乌龟则是一步一步慢慢地爬行。跑到半路，兔子回头一看，见乌龟远远落在后面，心想：“就算我睡一觉，乌龟也不可能追上来。”于是，兔子找了个舒服的地方躺下来打起了盹儿。
-    乌龟虽然缓慢，但却一刻不停地向前爬。当兔子醒来时，发现乌龟已经快到终点了，它赶紧追赶，但最终还是乌龟赢得了比赛。
-    这个故事告诉我们，骄傲使人失败，坚持不懈才是成功的秘诀。无论何时，我们都不能轻视对手，更不能因一时领先而放松警惕
+    一只狡猾的狐狸总想抓住聪明的兔子。一天，兔子故意留下一串胡萝卜引诱狐狸进入陷阱。最终，狐狸落入了陷阱，而兔子安全逃脱了。
     """
-    title = "《龟兔赛跑》"
-    save_folder = "day1"
+    title = "《聪明的兔子》"
+    save_folder = "./output_video/day10-聪明的兔子"
     main(title=title, content=content, save_folder=save_folder)

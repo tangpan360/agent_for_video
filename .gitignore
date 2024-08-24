@@ -1,0 +1,7 @@
+# 文件夹
+.cache/
+.idea/
+__pycache__/
+utils/__pycache__/
+output_video/
+.env
